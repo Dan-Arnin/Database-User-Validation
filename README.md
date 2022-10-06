@@ -1,6 +1,6 @@
 # Database-User-Validation
 
-4th Semister group Mini Project
+4th Semester group Mini Project
   
 ### Team members :-
 
