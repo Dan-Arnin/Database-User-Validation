@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(hosp.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:sans-serif;
+}
+
+.doclogin
+{
+    width: 400;
+    height: 420px;
+    background: black;                   
+    color:white;                         
+    top: 50%;                             /*the div will be pushed down 50% from the top*/
+    left: 50%;                            /*the div will be pushed down 50% from the left*/
+    position: absolute;                   /* positioned absolutely with reference to the closest parent that has a position relative value*/
+    transform: translate(-50%,-50%);      /*move this element left and upwards by 50% of the computed dimension along the axis*/
+    box-sizing: border-box;               /* padding and border are included in the width and height: Both divs are the same size now*/
+    padding: 70px 30px;           
+}
+
+.doclogin input[type="radio"]
+{
+    position: relative;
+    top: -5px;
+    left: -160px;
+
+}
+.icon
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);               /* 50% moves the icon to the middle of whole webpage whereas this moves it to the middle of the login box*/
+}
+
+h1
+{
+    padding: 0 0 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.doclogin p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.doclogin input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.doclogin input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: 225px;
+    color: white;
+    font-size: 16px;
+}
+
+.doclogin input[type="otp"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: 225px;
+    color: white;
+    font-size: 16px;
+}
+
+.doclogin button[type = "submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    top: 350px;
+    left: 25%;
+    background: red;
+    color:fff;
+    font-size: 16px;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.doclogin button[type = "submit"]:hover
+{
+    cursor:pointer;
+    background: blueviolet;
+}
+.base-timer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+
+  .base-timer__label {
+    position: absolute;
+    
+    /* Size should match the parent container */
+    width: 300px;
+    height: 300px;
+    
+    /* Keep the label aligned to the top */
+    top: 0;
+    
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 48px;
+  }
+
+#countdown
+  {
+    position: absolute;
+    top:60%;
+    left: 48%;
+    size: 3rem;
+    color: aliceblue;
+    z-index: 2;
+  }
+
+#timeleft{
+    position: absolute;
+    top: 64.5%;
+    left: 20%;
+    color: white;
+}
